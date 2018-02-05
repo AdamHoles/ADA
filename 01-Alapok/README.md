@@ -1,7 +1,3 @@
-FORRAS 
-
-[Vissza a főoldalra](./../index.html)  
-
 Segédanyag az 1. gyakorlathoz
 =============================
 
@@ -57,7 +53,7 @@ TYPE <azonosító> IS (<érték1>,<érték2>,<érték3>,...,<értékn>);
 
 ### Megszorításos típus:
 ```ada
-TYPE <azonosító> IS NEW <alaptípus> \[RANGE <n..m>\];   
+TYPE <azonosító> IS NEW <alaptípus> RANGE <n..m>;   
 ```
 Örökli a szülő típus típusmüveleteit, struktúráját stb.  
 pl.:
@@ -67,7 +63,7 @@ TYPE napok IS NEW integer RANGE 1..31;
 
 ### Altípus:
 ```ada
-SUBTYPE <azonosító> IS <alaptípus> \[RANGE <n..m>\];   
+SUBTYPE <azonosító> IS <alaptípus> RANGE <n..m>;   
 ```
 pl.:
 ```ada
@@ -79,7 +75,7 @@ Az eddig ismertetett típusokat **DISZKRÉT** típusoknak nevezzük
 
 ### Saját lebegőpontos típusok
 ```ada
-TYPE <azonosító> IS \[NEW FLOAT\] DIGITS <n>   
+TYPE <azonosító> IS NEW FLOAT DIGITS <n>   
 ```
 A n tizedesjegyig pontos lebegőpontos típus  
 ```ada
@@ -93,16 +89,16 @@ Attribútumok:
 Az attribútumok az adott típusokhoz tartozó típusműveletek. Ezek segítségével információkat tudunk kérni a típusról, valamint típusspecifikus műveleteket hajthatunk végre. A diszkrét típusok attribútumai a következők: (T egy tetszőleges diszkrét típus)  
 | Attributum | Jelentese |
 | ---------- | --------- |
-| T'First | típusértékhalmaz alsó határa |
-| T'Last | típusértékhalmaz felső határa |
-| T'Range | First..Last intervallumot adja vissza | 
-| T'Min(a,b) | a és b közül a kiesbbiket adja vissza |
-| T'Max(a,b) | a és b közül a nagyobbikat adja vissza |
-| T'Succ(a) | az a érték rákövetkezője |
-| T'Pred(a) | az a érték megelőzője |
-| T'Image(a) | az a-t stringgé konvertálja |
-| T'Value(s) | az s stringből T típusú értéket konvertál |
-| T'Width(a) | a T'Image által visszaadott string maximális hossza. |
+| T\'First | típusértékhalmaz alsó határa |
+| T\'Last | típusértékhalmaz felső határa |
+| T\'Range | First..Last intervallumot adja vissza | 
+| T\'Min(a,b) | a és b közül a kiesbbiket adja vissza |
+| T\'Max(a,b) | a és b közül a nagyobbikat adja vissza |
+| T\'Succ(a) | az a érték rákövetkezője |
+| T\'Pred(a) | az a érték megelőzője |
+| T\'Image(a) | az a-t stringgé konvertálja |
+| T\'Value(s) | az s stringből T típusú értéket konvertál |
+| T\'Width(a) | a T\'Image által visszaadott string maximális hossza. |
    
 példák az attribútumok használatára:  
 
