@@ -135,6 +135,7 @@ A legnagyobb precedenciájú van legfelül
 
    
 Operátorok jelentése:  
+
 | Operator | Megnevezes |
 | ------- | ---------- |
 | ** | hatványozás pl.: 2**5 = 32 |
