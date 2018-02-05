@@ -72,8 +72,8 @@ matrix : ARRAY(1..10, 1..5) OF NATURAL; 
 ```
 Természetesen a több dimenziós tömbökre is vonatkoznak az előzőek. Mindent ugyanúgy kell csinálni, csak vesszővel elválasztva a többi dimenzióra is meg kell adni az adatokat.  
 
-# Stringek
-----------
+# String
+--------
 
 A string egy karakterekből álló tömb. A definíciója: (Előredefiniált típus)  
 ```ada
@@ -92,7 +92,8 @@ s4 : STRING(INTV'RANGE); 
 s2 := "ABCDEF";    --Helyes   
 s2 := "AB";        --Hibás mert, 6 hosszú string adható értékül s2-nek, ui. s2 egy tömb, és így az Ada nem tudja, hogy mi kerüljön a 3. helyre   
 ```
-példák kezdőérték megadására:  
+példák kezdőérték megadására: 
+ 
 ```ada
 s5 : STRING(1..5) := "ABCDE";   
 s6 : STRING := "ABCDE";        --Mindkettő helyes, mert ha adunk kezdőértéket, akkor abból az Ada ki tudja számolji a string hosszát. Ilyenkor 1-től indexelődik.   
@@ -100,13 +101,14 @@ s6 : STRING := (1..7 => 'A');        \-\- Itt az értéke "AAAAAAA
 s7 : STRING := "AB" & (3..5 => 'A');        \-\- Itt az értéke "ABAAAAA"-lesz   
 s8 : STRING(1..7) := (3 => 'C', 6 => 'E', OTHERS => 'A');     \-\- Itt az értéke "AACAAACA"-lesz. Ha van others, akkor a méretet is meg kell adni   
 s9 : STRING := ('A','B','C','D');    --Az értéke "ABCD" lesz   
-```   
+```
 
 # Tömbök attribútumai
 -------------------
 
 Tömbök esetében a változó és nem a típus nevét kell az attribútum elé írni.  
-Legy a következő példa tömbünk:  
+Legy a következő példa tömbünk:
+
 ```ada 
 A : ARRAY(1..10, 3..7) OF INTEGER;   
 ```
