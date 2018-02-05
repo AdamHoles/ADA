@@ -184,19 +184,17 @@ If
 ```ada
 IF <feltétel 1> THEN   
     <utasítások>   
-\[ELSIF <feltétel 2> THEN   
+ELSIF <feltétel 2> THEN   
     <utasítások>   
-\[ELSIF <feltétel 3> THEN   
+ELSIF <feltétel 3> THEN   
     <utasítások>   
     .   
     .   
     .   
-\[ELSIF <feltétel n> THEN   
+ELSIF <feltétel n> THEN   
     <utasítások>   
-\]\]...\]   
-\[ELSE   
+ELSE   
     <utasítások>   
-\]   
 END IF;   
 ```
 Switch:
@@ -204,15 +202,15 @@ Switch:
 CASE <diszkrét kifejezés> IS   
     WHEN <érték 1> =>   
         <utasítások>   
-    \[WHEN <érték 2> =>   
-        <utasítások>\]       
+    WHEN <érték 2> =>   
+        <utasítások>     
     .   
     .   
     .   
-    \[WHEN <érték n> =>   
-        <utasítások>\]       
-    \[WHEN OTHERS =>   
-        <utasítások>\]   
+    WHEN <érték n> =>   
+        <utasítások>       
+    WHEN OTHERS =>   
+        <utasítások>  
 END CASE;   
 ```
 érték lehet pl. 1 vagy 1|2|8 vagy 1|3..8;  
@@ -228,7 +226,7 @@ END LOOP;
 ```
 ### Növekményes
 ```ada
-FOR <változó> \[REVERSE\] IN <intervallum> LOOP   
+FOR <változó> [REVERSE] IN <intervallum> LOOP   
     <utasítások>   
 END LOOP;   
 ```
@@ -267,10 +265,10 @@ Hello World program
 ```ada   
 with ada.text_io;   
 use ada.text_io;    --ezek kellenek a kiiratáshoz   
-   
+
 procedure main is    --az eljárás neve meg kell, hogy egyezzen a forrást tartalmazó file nevével   
-    \-\- itt van a deklarációs rész   
-    \-\- most üresen marad   
+    -- itt van a deklarációs rész   
+    -- most üresen marad   
 begin   
     put_line("HELLO WORLD");   
 end main;   
