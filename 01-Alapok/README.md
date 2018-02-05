@@ -170,10 +170,9 @@ Operátorok jelentése:
    
 ezek már nem operátorok  
 
+| Jele | Neve |
 | -- | --------- |
 | := | értékadás |
-
---
 
 magyarázó szöveg, a sor végéig hat
 
