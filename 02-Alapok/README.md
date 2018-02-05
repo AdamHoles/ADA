@@ -66,7 +66,7 @@ TYPE TFIZETES IS ARRAY(HONAP RANGE <>) OF INTEGER;           �
 FIZETES : TFIZETES(SEP..DEC) := (90000,120000,110000,250000);    --így lehet kezdőértéket adni egy tömbnek   
    
 FIZETES(SEP) := 95000;    --így adunk értéket a tömb egy elemének !!FONTOS!! Az adában a gömbölyű zárójelet használjuk a tömb elemének elérésére   
-```   
+```
 
 ### Több dimenziós tömb
 
