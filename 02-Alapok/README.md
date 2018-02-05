@@ -51,11 +51,14 @@ END LOOP; 
 ```
 ### Indefinit tömbtípus
 
-Indefinit tömbtípus esetén nem kell a típusdefiníciókor megadni a könkrét méretét a tömbnek, hanem csak egy diszkrét típust amivel majd indexeljük. A konkrét méretet a deklarációkor adjuk meg.  
+Indefinit tömbtípus esetén nem kell a típusdefiníciókor megadni a könkrét méretét a tömbnek, hanem csak egy diszkrét típust amivel majd indexeljük. A konkrét méretet a deklarációkor adjuk meg.
+  
 ```ada
 TYPE <tömbtípusnév> IS ARRAY (<indextípus> RANGE <>) OF  <tömbváltozó> : <tömbtípusnév>(<intervallum>);   
-```   
-példák:  
+```
+   
+példák:
+ 
 ```ada
 TYPE HONAP IS (JAN, FEB, MAR, APR, MAJ, JUN, JUL, AUG, SEP, OKT, NOV, DEC);   
 TYPE TFIZETES IS ARRAY(HONAP RANGE <>) OF INTEGER;            --indexek lehetnek tetszőleges diszkét típuspk is   
