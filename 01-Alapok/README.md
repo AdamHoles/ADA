@@ -87,6 +87,7 @@ Attribútumok:
 -------------
 
 Az attribútumok az adott típusokhoz tartozó típusműveletek. Ezek segítségével információkat tudunk kérni a típusról, valamint típusspecifikus műveleteket hajthatunk végre. A diszkrét típusok attribútumai a következők: (T egy tetszőleges diszkrét típus)  
+
 | Attributum | Jelentese |
 | ---------- | --------- |
 | T\'First | típusértékhalmaz alsó határa |
