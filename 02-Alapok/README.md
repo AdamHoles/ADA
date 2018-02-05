@@ -144,7 +144,7 @@ END <eljárás név>; 
 
 Függvény:
  
-```ada   
+```ada
 FUNCTION <függvény név>(paraméterlista) RETURN <visszatérési típus> IS  
     <deklarációs rész>  
 BEGIN   
