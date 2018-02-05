@@ -4,12 +4,12 @@ Segédanyag az 1. gyakorlathoz
 Tartalom:
 ---------
 
-*   [Alap adattípusok](#adat)
-*   [Attribútumok](#attrib)
-*   [Műveletek precedenciája](#muv)
-*   [Vezérlési szerkezetek](#vezszerk)
-*   [Hello World program](#hw)
-*   [Példaprogramok](#pelda)
+*   [Alap adattípusok](#alap-adattipusok)
+*   [Attribútumok](#attributumok)
+*   [Műveletek precedenciája](#muveletek-precedenciaja)
+*   [Vezérlési szerkezetek](#vezerlesi-szerkezetek)
+*   [Hello World program](#hello-world-program)
+*   [Példaprogramok](#peldaprogramok)
 
 Alap adattípusok:
 -----------------
