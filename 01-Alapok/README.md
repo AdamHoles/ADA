@@ -11,7 +11,7 @@ Tartalom:
 *   [Hello World program](#hello-world-program)
 *   [Példaprogramok](#peldaprogramok)
 
-Alap adattípusok:
+# Alap adattípusok:
 -----------------
 
 ### Előjeles egész:
@@ -83,7 +83,7 @@ TYPE <azonosító> IS DELTA <lépésköz> RANGE <intervallum>
 ```
 Olyan lebegőpontos típus, ami az intervallumban megadott tartományon van értelmezve, és a lépésközben megadott pontosséggal követik egymást a számok.  
 
-Attribútumok:
+# Attribútumok:
 -------------
 
 Az attribútumok az adott típusokhoz tartozó típusműveletek. Ezek segítségével információkat tudunk kérni a típusról, valamint típusspecifikus műveleteket hajthatunk végre. A diszkrét típusok attribútumai a következők: (T egy tetszőleges diszkrét típus)  
@@ -121,7 +121,7 @@ nap2 := hetnap'SUCC(kedd);      --veszi a kedd rákövetkezőjét, és értékü
 nap2 := hetnap'PRED(hetfo);     --hiba, hetfonek nincs megelőzője   
 ```
 
-Műveletek precedenciája
+# Műveletek precedenciája
 -----------------------
 
 A legnagyobb precedenciájú van legfelül  
@@ -176,7 +176,7 @@ ezek már nem operátorok
 
 magyarázó szöveg, a sor végéig hat
 
-Vezérlési szerkezetek
+# Vezérlési szerkezetek
 ---------------------
 
 ### Elágazás:
@@ -260,7 +260,7 @@ END;
 ```
 A Blokkok egymásba ágyazhatóak.
 
-Hello World program
+# Hello World program
 -------------------
 ```ada   
 with ada.text_io;   
@@ -274,6 +274,6 @@ begin
 end main;   
 ```
 
-Példaprogramok
+# Példaprogramok
 --------------
 
