@@ -159,7 +159,8 @@ Eljárásnak az alábbi típusú paraméterei lehetnek:
 
 Függvénynek csak IN típusú paramétereik lehetnek. Ha nem mondjuk meg explicit, hogy egy paraméter milyen, akkor az mindig IN típusú.
    
-Példák  
+Példák:
+
 ```ada
 PROCEDURE CSERE(a : IN OUT INTEGER, b : IN OUT INTEGER) IS   
     tmp : INTEGER;   
@@ -168,7 +169,8 @@ BEGIN 
     a := b;   
     b := tmp;   
 END CSERE;   
-```   
+```
+
 ```ada
 FUNCTION FAKTOR(a : IN INTEGER) IS   
     tmp : INTEGER := 1;   
@@ -179,11 +181,12 @@ BEGIN 
    
     RETURN tmp;   
 END FAKTOR;   
-```   
+```
 
 ### Operátor túlterhelés:
 
 Például az összeadás:  
+
 ```ada
 FUNCTION "+"(<baloldali paraméter> : IN <típusa>, <jobboldali paraméter> : IN <típusa>) RETURN <visszatérési érték típusa> IS   
     <deklarációs rész>   
@@ -194,5 +197,5 @@ END "+"; 
 ```
 Adában az mint az operátorok esetében is egy eljárást vagy függvényt nemcsak a neve, hanem a paraméterezése is azonosít. Így írhatunk több azonos nevű alprogramot is amiknek különböző paramétereik vannak.  
 
-# Példarogramok
----------------
+# Példaprogramok
+----------------
