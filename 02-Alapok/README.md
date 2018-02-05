@@ -129,7 +129,8 @@ A : ARRAY(1..10, 3..7) OF INTEGER; 
 
 Az Ada támogatja a függvény- és az eljárás írását is, sőt lényegesen megkülönbözteti a kettőt. Függvényt akkor kell használni, ha valamely paraméterek segítségével szeretnénk meghatározni egy újabb értéket. (ilyenek pl. a matematikai függvények) Tehát egy függvénynek azonos paraméterezés mellent, mindig ugyanazt az eredményt kell visszaadni. Pl. egy verem pop művelete nem lehet függvény, mert mindig a verem tetején levő értékkel tér vissza, amelyek különbözőek is lehetnek. (A pop-ot eljárással kell megvalósítani, ahol a verem tetején levő értéket egy kimenő (cím szerinti) paraméterben adjuk át. A C-ben ismert út sem alkalmazható Adában, miszerint egy függvény (pl. beolvas a billentyűzetről egy számot) a visszatérési értékében azt adja vissza, hogy sikerült-e a művelet. Azért nem jó, mert ugyanazon paraméterezés esetén vagy sikerül vagy nem, azaz nem mindig ugyanaz a visszatérési érték. Ezt a kivételkezeléssel oldhatjuk meg az Adában. Tehát összefoglalva függvény akkor írunk, ha az alprogram nem változtat a programunk állapotán, azaz nem módosít semmilyen adatot a saját lokális változóin kívül, minden más esetben eljárást kell írni.  
    
-Eljárás:  
+Eljárás:
+ 
 ```ada
 PROCEDURE <eljárás név>(paraméterlista) IS   
     <deklarációs rész>   
@@ -137,7 +138,9 @@ BEGIN 
     <utasítások>   
 END <eljárás név>;   
 ```
-Függvény:  
+
+Függvény:
+ 
 ```ada   
 FUNCTION <függvény név>(paraméterlista) RETURN <visszatérési típus> IS  
     <deklarációs rész>  
