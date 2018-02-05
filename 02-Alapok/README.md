@@ -96,11 +96,11 @@ példák kezdőérték megadására:
  
 ```ada
 s5 : STRING(1..5) := "ABCDE";   
-s6 : STRING := "ABCDE";        --Mindkettő helyes, mert ha adunk kezdőértéket, akkor abból az Ada ki tudja számolji a string hosszát. Ilyenkor 1-től indexelődik.   
-s6 : STRING := (1..7 => 'A');        \-\- Itt az értéke "AAAAAAA"-lesz   
-s7 : STRING := "AB" & (3..5 => 'A');        \-\- Itt az értéke "ABAAAAA"-lesz   
-s8 : STRING(1..7) := (3 => 'C', 6 => 'E', OTHERS => 'A');     \-\- Itt az értéke "AACAAACA"-lesz. Ha van others, akkor a méretet is meg kell adni   
-s9 : STRING := ('A','B','C','D');    --Az értéke "ABCD" lesz   
+s6 : STRING := "ABCDE";   --Mindkettő helyes, mert ha adunk kezdőértéket, akkor abból az Ada ki tudja számolji a string hosszát. Ilyenkor 1-től indexelődik.   
+s6 : STRING := (1..7 => 'A');   -- Itt az értéke "AAAAAAA"-lesz   
+s7 : STRING := "AB" & (3..5 => 'A');  -- Itt az értéke "ABAAAAA"-lesz   
+s8 : STRING(1..7) := (3 => 'C', 6 => 'E', OTHERS => 'A');  -- Itt az értéke "AACAAACA"-lesz. Ha van others, akkor a méretet is meg kell adni   
+s9 : STRING := ('A','B','C','D');  --Az értéke "ABCD" lesz   
 ```
 
 # Tömbök attribútumai
