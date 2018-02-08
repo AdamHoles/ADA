@@ -15,7 +15,8 @@ Tartalom:
 
 ### Definit tömbtípus
 ```ada
-TYPE <tömbtípusnév> IS ARRAY (<intervallum>) OF  <tömbváltozó> : <tömbtípusnév>;   
+TYPE <tömbtípusnév> IS ARRAY (<intervallum>) OF  
+<tömbváltozó> : <tömbtípusnév>;   
 ```
    
 A definit tömbtípusnak az a tulajdonsága, hogy már a típusdefinicíókor meg kell adni a tömb méretét  
@@ -54,7 +55,8 @@ END LOOP; 
 Indefinit tömbtípus esetén nem kell a típusdefiníciókor megadni a könkrét méretét a tömbnek, hanem csak egy diszkrét típust amivel majd indexeljük. A konkrét méretet a deklarációkor adjuk meg.
   
 ```ada
-TYPE <tömbtípusnév> IS ARRAY (<indextípus> RANGE <>) OF  <tömbváltozó> : <tömbtípusnév>(<intervallum>);   
+TYPE <tömbtípusnév> IS ARRAY (<indextípus> RANGE <>) OF  
+<tömbváltozó> : <tömbtípusnév>(<intervallum>);   
 ```
    
 példák:
