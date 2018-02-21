@@ -1,7 +1,4 @@
 4\. gyakorlat 
-
-[Vissza a főoldalra](./../index.html)  
-
 Segédanyag a 4. gyakorlathoz
 ============================
 
@@ -12,7 +9,7 @@ Tartalom:
 *   [Specifikációs rész](#specifikációs_rész)
 *   [Törzsrész](#törzsrész)
 *   [Főprogram](#főprogram)
-*   [Példa: Komplex számok csomagja](#példa:_komplex_számok_csomagja)
+*   [Példa Komplex számok csomagja](#példa_komplex_számok_csomagja)
 *   [Példaprogramok](#példaprogramok)
 
 Csomag
@@ -26,13 +23,11 @@ A csomag önnálló fordítási egység. Két részből áll: specifikációs r�
 Ebben a részben deklaráljuk a csomagban szereplő alprogramokat és definiáljuk a típusokat.  
 Szintakszisa az alábbi: (a kód a csomagnév.ads-be kerül)  
 
-```ada   
 PACKAGE <csomagnév> IS   
     <alprogram és típus definíciók> (1)   
 PRIVATE   
     <átlátszatlan rész> (2)   
 END <csomagnév>;   
-```
    
 Az (1) részbe kerülnek a publikus definíciók / deklarációk. Ezeket lehet kívülről erérni, tehát ez a rész biztosít egy interfészt a csomagunkhoz. A csomagot akkor terveztük meg helyesen, ha az itt szerepló definíciókból / deklarációkból egy másik személy egyértelműem meg tudja állapítani, hogy mit csinál a csomagunk. Ha az nem így van, akkor a csomag rossz, ugyanis az Ada (és számos más nyelv) szemléletmódja az, hogy a csomag (objektum) implementációja csak a csomag írójára tartozik, a külvilággal (más objektumokkal) csak a publkus részben definiált interfészen keresztül kommunikálhat. A PRIVATE részben definiált / deklarált dolgokat csak a csomagon belül tudjuk elérni (ez nemcsak szemléletmód, hanem szintaktikailak lehetetlen). (Az Ada egyik erőssége, hogy nem OOP környezetben is biztosítja ezt).  
    
@@ -76,7 +71,7 @@ WITH <csomagnév>; 
 \[USE <csomagnév>\];   
 ```
 
-### Példa: Komplex számok csomagja
+### Példa Komplex számok csomagja
 
 Ez külön a komplex_csomag.ads-be:  
 
