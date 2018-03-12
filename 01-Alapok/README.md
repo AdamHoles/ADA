@@ -110,7 +110,7 @@ s1, s2 : STRING;
 h1 : NATURAL; --tegyük fel, hogy h az s1 string hosszát tárolja   
 i : INTEGER := 42;   
 nap : hetnap := hetfo;   
-nap2 : hatnap;   
+nap2 : hetnap;   
    
 s2 := INTEGER'IMAGE(i);         --az i számot stringgé konvertálja, majd értékül adja s2-nek   
 i := INTEGER'SUCC(i);           --az i változó értékét növeli 1-el   
